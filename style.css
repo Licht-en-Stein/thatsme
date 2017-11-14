@@ -1,0 +1,96 @@
+html {
+  font-size: 1.25em;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #E6E6FA;
+  
+}
+
+header > h1,h2, .footer > p {
+  text-align: center;
+}
+
+.footer {
+  font-weight: bold;
+}
+
+
+.navi ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.navi ul, li {
+  padding: .5rem;
+}
+
+a  {
+  text-decoration: none;
+  
+  font-weight: bold;
+}
+
+
+
+.navi a:hover {
+  background-color: #40E0D0;
+  padding: .5rem;
+}
+
+.navi a:active {
+  background-color: #40E0D0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: .5rem;
+}
+
+.me {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  margin: .5rem;
+  align-self: center;
+
+}
+
+iframe:first-of-type {
+  display: flex;
+  flex-direction: row;
+  margin: 1em;
+  border: 1px solid;
+}
+
+.city > p {
+  text-align: center;
+}
+
+img {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.form {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+legend,
+input,
+textarea  {
+  width: 90%;
+  margin: 0 auto;
+}

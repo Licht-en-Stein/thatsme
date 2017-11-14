@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Devugees: Introduction to JQuery</title>
+    <script type="text/javascript">
+    document.write('<link rel="stylesheet" type="text/css" href="style.css?' + Math.random() + '" />');
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet">
+</head>
+
+<body>
+    <!-- TASK:
+
+        Write a page about yourself.
+
+        - Does not need to be responsive
+        - When the document is loaded, all your content is slowly faded in
+        - Include a header, a content and a footer
+        - The navigation is located in the header and consists of three links
+          "About me", "My favourite city", "My favourite songs"
+          whereas the default behaviour is prevented and replaced by your own click events instead
+        - All click events for the links change your main content accordingly
+            - how you implement it, is up to you
+        - When clicking a navigation link, your content changes with a JQuery animation of your choice
+
+        "About me" -> 1 or 2 paragraphs about yourself
+        "My favourite city" -> 1 paragraph about your city, including a nice picture
+        "My favourite songs" -> Embed 2 or 3 Songs from Youtube in your page
+                                (Google how to do that)
+
+        - when the user presses the left arrow key, he will go back in navigation. i.e. if he is at "My favourite city", he will navigate to "About me"
+        - when the user presses the right arrow key, he will go further in navigation, i.e. if he is at "My favourite city", he will navigate to "My favourite songs"
+    -->
+    <header>
+        <h1><a href="index.html" id="home">That's me</a></h1>
+        <nav class="navi">
+            <ul>
+                <li><a class="nav-about">About me</a></li>
+                <li><a class="nav-city">My favourite city</a></li>
+                <li><a class="nav-songs">My favourite songs</a></li>
+                <li><a class="nav-contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="content">
+        <main class="about">
+            <h2>Hello my name is</h2>
+            <div class="LI-profile-badge" data-version="v1" data-size="large" data-locale="de_DE" data-type="vertical" data-theme="light" data-vanity="boris-lichtenstein"><a class="LI-simple-link" href='https://de.linkedin.com/in/boris-lichtenstein?trk=profile-badge'>Boris Lichtenstein</a>
+            </div>
+            <div class="me">
+                <p>I am born and raised in Berlin back in 1983. Over the past decade i worked mostly in the creative scene. I studied audio engineering as well as audio-visual media design. According to that i gained experience in different departments. I focused myself on film, photography, music production as well as theatrical acting. I'm looking forward to explore new grounds other than before.
+                    <br> Currently learning web development. A glimpse of my personal work over the years attached below.</p>
+            </div>
+            <iframe src="https://www.eyeem.com/u/licht_en_stein" target="_blank" width="640" height="450" frameborder="no" scrolling="auto" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <iframe width="640" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/510639&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+        </main>
+        <article class="city">
+            <h2>My favourite city</h2>
+            <p>I did not travelled a lot of cities yet, but one of my important journies was the travel to Sri Lanka. In particular the City <strong><a href="https://en.wikipedia.org/wiki/Bentota">Bentota</a></strong>.</p>
+            <img src="../images/224359123009202.jpg" alt="#">
+        </article>
+        <section class="media">
+            <div class="audio">
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/313437687&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1780345&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+            </div>
+            <div class="video">
+                <iframe src="https://player.vimeo.com/video/83812313?byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <iframe src="https://player.vimeo.com/video/195192097?byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+
+        </section>
+
+            
+        <form class="form">
+          <fieldset>
+            <legend>Personal information:</legend>
+            Name<br>
+            <input type="text" name="name" placeholder=".....write here....."><br>
+            Em@il<br>
+            <input type="text" name="mail" placeholder=".....write here....."><br><br>
+            <textarea name="message" rows="20" cols="50">
+            drop me a line here
+            </textarea><br>
+            <input type="submit" value="Send Contact Request">
+          </fieldset>
+        </form>
+
+    </div>
+
+    <footer class="footer">
+        <p>Developed with 💙 in Berlin</p>
+    </footer>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+    document.write('<scr' + 'ipt src="main.js?' + Math.random() + '" type="text/javascript"></scr' + 'ipt>');
+    </script>
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+</body>
+
+</html>
